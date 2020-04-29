@@ -82,16 +82,6 @@ deploy:
     repo: git@github.com:cntoby/guess_it.git
     branch: master
   - type: sftp
-    host: g1.housefor.ml
-    user: toby
-    privateKey: ../.ssh/id_rsa
-    remotePath: /opt/www/housefor.ml/
-  - type: sftp
-    host: g2.housefor.ml
-    user: toby
-    privateKey: ../.ssh/id_rsa
-    remotePath: /opt/www/housefor.ml/
-  - type: sftp
     host: tiger.housefor.ml
     user: toby
     privateKey: ../.ssh/id_rsa
@@ -99,30 +89,20 @@ deploy:
   - type: sftp
     host: aws1.housefor.ml
     user: ubuntu
-    privateKey: ../.ssh/aws-for-toby.pem
-    remotePath: /opt/www/housefor.ml/
-  - type: sftp
-    host: aws2.housefor.ml
-    user: ubuntu
-    privateKey: ../.ssh/lightsail-us-west-2.pem
-    remotePath: /opt/www/housefor.ml/
-  - type: sftp
-    host: do.housefor.ml
-    user: toby
     privateKey: ../.ssh/id_rsa
     remotePath: /opt/www/housefor.ml/
   - type: sftp
-    host: cc1.housefor.ml
-    user: root
-    pass: y89952Rg1rYWfuOwMG
+    host: aws3.housefor.ml
+    user: ubuntu
+    privateKey: ../.ssh/id_rsa
     remotePath: /opt/www/housefor.ml/
   - type: sftp
-    host: cc2.housefor.ml
+    host: vtr1.housefor.ml
     user: root
-    pass: NH8X45tw92ILr9gRwc
+    privateKey: ../.ssh/id_rsa
     remotePath: /opt/www/housefor.ml/
   - type: sftp
-    host: cc3.housefor.ml
+    host: cc5.housefor.ml
     user: root
-    pass: sGepzjGV6yYA
+    privateKey: ../.ssh/id_rsa
     remotePath: /opt/www/housefor.ml/
