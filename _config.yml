@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://housefor.ml
+url: https://way2.club
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -81,28 +81,4 @@ deploy:
   - type: git
     repo: git@github.com:cntoby/guess_it.git
     branch: master
-  - type: sftp
-    host: tiger.housefor.ml
-    user: toby
-    privateKey: ../.ssh/id_rsa
-    remotePath: /opt/www/housefor.ml/
-  - type: sftp
-    host: aws1.housefor.ml
-    user: ubuntu
-    privateKey: ../.ssh/id_rsa
-    remotePath: /opt/www/housefor.ml/
-  - type: sftp
-    host: aws3.housefor.ml
-    user: ubuntu
-    privateKey: ../.ssh/id_rsa
-    remotePath: /opt/www/housefor.ml/
-  - type: sftp
-    host: vtr1.housefor.ml
-    user: root
-    privateKey: ../.ssh/id_rsa
-    remotePath: /opt/www/housefor.ml/
-  - type: sftp
-    host: cc5.housefor.ml
-    user: root
-    privateKey: ../.ssh/id_rsa
-    remotePath: /opt/www/housefor.ml/
+
